@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Positions</title>
+    <style>
+        .box{
+            border: 2px dotted plum;
+            width: 250px;
+        }
+        /* .nan{
+            position: relative;
+            left: 50px;
+            top: -30px;
+        } */
+         /* .nan{
+            position: absolute;
+            top: 40px;
+            left: 100px;
+         } */
+    </style>
 </head>
 <body>
     <h3>CSS Positions</h3>
     <ol>
         <!-- Flow related -->
         <li>Static</li>
-        <li>Relative</li>
-        <li>Absolute</li>
+        <li>Relative: current position relative a koto tuku change hobe and will not leave the current spot</li>
+        <li>Absolute. <small>will lose it's own position and will move based on the root</small></li>
         <!-- scroll related -->
         <li>Fixed</li>
         <li>Sticky</li>
     </ol>
+    <div class="container">
+        <div class="box">
+            <img src="images/1200-by-1200-images-2.jpg" width="200px" alt="">
+        </div>
+        <div class="box nan">
+            <img src="images/stock-photo-a-delicious-looking-flat-naan-on-a-wooden-table-the-naan-has-been-garnished-with-herbs-and-cheese-2492776021.jpg" width="200px" alt="">
+        </div>
+        <div class="box beef">
+            <img src="images/hqdefault.jpg" width="200px" alt="">
+        </div>
+    </div>
 </body>
 </html>
